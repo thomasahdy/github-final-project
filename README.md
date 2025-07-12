@@ -1,9 +1,24 @@
 # github-final-project
 
-A calculator that calculates simple interest given principal, annual rate of interest and time period in years.
-Input:
-   p, principal amount
-   t, time period in years
-   r, annual rate of interest
-Output
-   simple interest = p*t*r
+def simple_interest(p, t, r):
+    """
+    Calculate simple interest.
+
+    Parameters:
+        p (float): Principal amount
+        t (float): Time period in years
+        r (float): Annual rate of interest (as a decimal, e.g., 5% = 0.05)
+
+    Returns:
+        float: Simple interest
+    """
+    return p * t * r
+
+# Example
+principal = 1000
+time = 2
+rate = 0.05  # 5%
+
+interest = simple_interest(principal, time, rate)
+print(f"Simple Interest: {interest}")
+
